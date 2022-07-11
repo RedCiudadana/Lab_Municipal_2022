@@ -12372,3 +12372,43 @@ footer .hotline img {
   }
 }
 /*# sourceMappingURL=main.css.map */
+
+.search-container{
+  position: absolute;
+  width: 100%;
+  background: white;
+  top: 108%;
+  border-radius: 2px;
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.search-border{
+  border: 2px solid rgb(5, 61, 94, 0.5);
+}
+
+.search-container li{
+  border-bottom: 0.1px solid rgb(5, 61, 94, 0.2);
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.search-container li:last-child{
+  border-bottom: none;
+}
+
+.d-flex-responsive{
+  display: flex;
+}
+
+@media only screen and (max-width: 996px) {
+  .d-flex-responsive{
+    display: block;
+  }
+}
+
+.filter-blue{
+  filter: invert(40%) sepia(100%) saturate(393%) hue-rotate(155deg) brightness(93%) contrast(97%);
+}

@@ -1,5 +1,12 @@
 ---
-permalink: index.html
+pagination:
+  data: municipiosData
+  size: 1
+  addAllPagesToCollections: true
+  alias: municipio
+permalink: "/{{ municipio.departamento | slug }}/{{ municipio.municipio | slug }}/index.html"
+tags:
+  - municipios
 ---
 {% extends "src/base.njk"%}
 
